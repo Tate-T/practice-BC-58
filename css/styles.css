@@ -38,7 +38,6 @@ a {
 .container {
   width: 1140px;
   padding: 0 15px;
-  outline: solid #323232;
   margin: 0 auto;
 }
 
@@ -68,6 +67,7 @@ a {
   box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
   width: 200px;
   height: 45px;
+  border: none;
 }
 
 .links {
@@ -118,6 +118,7 @@ a {
   position: absolute;
   padding-top: 40px;
   padding-bottom: 40px;
+  border-bottom: solid rgba(161, 161, 161, 0.5);
 }
 
 .header-nav {
@@ -137,7 +138,32 @@ a {
 
   font-size: 16px;
   font-weight: 500;
+  position: relative;
 }
+
+.header-active::after {
+  display: block;
+  content: "";
+  width: calc(100% + 40px);
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: -40px;
+  left: -20px;
+}
+
+.header-link:hover::after {
+  display: block;
+  content: "";
+  width: calc(100% + 40px);
+  height: 2px;
+  background: var(--accent);
+  position: absolute;
+  bottom: -39px;
+  left: -20px;
+}
+
+
 
 /* Hero */
 .hero {
@@ -267,7 +293,6 @@ a {
 
 .standarts-text {
   max-width: 489px;
-  outline: 1px solid red;
 }
 
 .standarts-title {
