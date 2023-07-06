@@ -2,6 +2,16 @@
     .container{
         max-width: 1140px;
     }
+
+   
+
+    .section-title {
+        color: var(--title-color, #323232);
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 146.28%;
+      }
     /* Hero */
     .hero {
         padding-top: 319px;
@@ -10,4 +20,13 @@
   .hero-title {
     font-size: 48px;
 }
+
+/* Services */
+.services {
+    padding-top: 110px;
+    padding-bottom: 105px;
+  }
+  .services-item {
+    --grid-items: 3;
+  }
 }
