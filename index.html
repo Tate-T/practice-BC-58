@@ -18,16 +18,21 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/reset.css"/>
-    <link rel="stylesheet" href="./css/vars.css"/>
-    <link rel="stylesheet" href="./css/mobile.css"/>
-    <link rel="stylesheet" href="./css/tablet.css"/>
-    <link rel="stylesheet" href="./css/desktop.css"/>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/vars.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
+        <button type="button" class="header-btn js-open-menu">
+          <svg class="header-icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="header-nav">
           <ul class="header-list">
             <li class="header-item">
@@ -50,7 +55,31 @@
           </ul>
         </nav>
       </div>
-    </header> -->
+      <div class="menu js-menu-container is-open">
+        <button class="menu-close js-close-menu" type="button ">
+          <svg class="modal-close" width="32" height="32">
+            <use href="./images/icons.svg#cancel-circle"></use>
+          </svg>
+        </button>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a href="./index.html" class="menu-link menu-active">Головна</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">Наші проекти</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">Послуги</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">Новини</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">Контакти</a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
       <!-- Hero section -->
       <section class="hero">
@@ -530,6 +559,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
