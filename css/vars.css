@@ -1,0 +1,13 @@
+:root {
+    --hero-background: #00000033;
+    --background-text-color: #fff;
+    --title-color: #323232;
+    --text: #999999;
+    --accent: #4985ff;
+    --subtitle-color: #000;
+    --background-color-var: #f6f6f8;
+    --border-color: #e0e0e0;
+  
+    --grid-gap: 30px;
+    --grid-items: 3;
+  }
