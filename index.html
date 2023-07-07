@@ -134,7 +134,7 @@
         </div>
       </section>
       <!-- Standarts -->
-      <!-- <section class="standarts">
+      <section class="standarts">
         <div class="container">
           <div class="standarts-box">
             <div class="standarts-text">
@@ -150,7 +150,30 @@
                 >Детальніше про компанію</a
               >
             </div>
-            <img src="./images/standarts-img.webp" alt="noutbooks" />
+            <picture>
+              <source
+                srcset="
+                  ./images/standarts@1x-desktop.webp 1x,
+                  ./images/standarts@2x-desktop.webp 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/standarts@1x-tablet.webp 1x,
+                  ./images/standarts@2x-tablet.webp 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/standarts@1x-mobile.webp 1x,
+                  ./images/standarts@2x-mobile.jpg  2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img src="./images/standarts-img.webp" alt="noutbooks" />
+            </picture>
           </div>
           <ul class="standarts-list">
             <li class="standarts-item">
@@ -205,9 +228,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Works -->
-      <!-- <section class="works">
+      <section class="works">
         <div class="container">
           <div class="works-box">
             <h2 class="works-title section-title">
@@ -273,9 +296,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+
       <!-- Projects -->
-      <!-- <section class="projects">
+      <section class="projects">
         <div class="container">
           <h2 class="projects-title section-title">Наші проекти</h2>
           <p class="projects-text">
@@ -315,34 +339,47 @@
           </ul>
           <a href="#" class="projects-btn button">Всі проекти</a>
         </div>
-      </section> -->
+      </section>
       <!-- Video -->
-      <!-- <section class="video">
-      <div class="container">
-        <h2 class="video-title section-title">Відео про нашу роботу</h2>
-        <p class="video-info">Просто подивіться, як ми працюємо</p>
-        <div class="video-box">
-          <button class="video-button" type="button">
-            <svg class="video-icon">
-              <use href="./images/icons.svg#video-button"></use>
-            </svg>
-            Дивитись відео
-          </button>
+      <section class="video">
+        <div class="container">
+          <h2 class="video-title section-title">Відео про нашу роботу</h2>
+          <p class="video-info">Просто подивіться, як ми працюємо</p>
+          <div class="video-box">
+            <button class="video-button" type="button">
+              <svg class="video-icon">
+                <use href="./images/icons.svg#video-button"></use>
+              </svg>
+              Дивитись відео
+            </button>
+          </div>
+          <form class="video-form">
+            <h3 class="video-name subtitle-text">
+              Підпишіться на нашу розсилку
+            </h3>
+            <label for="video-email" class="video-label main-text"
+              >Корисні статті, акції, новини - отримайте все це зараз!</label
+            >
+            <span class="video-input-wrap">
+              <input
+                type="email"
+                id="video-email"
+                class="video-input"
+                placeholder="Ваш e-mail"
+              />
+              <button type="submit" class="video-btn button">
+                Підписатися
+              </button>
+            </span>
+            <p class="video-desc">
+              Ми не шлем спам, і не передаємо нікому ваші дані
+            </p>
+          </form>
         </div>
-        <form class="video-form">
-          <h3 class="video-name subtitle-text">Підпишіться на нашу розсилку</h3>
-          <label for="video-email" class="video-label main-text">Корисні статті, акції, новини - отримайте все це зараз!</label>
-          <span class="video-input-wrap">
-            <input type="email" id="video-email" class="video-input" placeholder="Ваш e-mail">
-            <button type="submit" class="video-btn button">Підписатися</button>
-          </span>
-          <p class="video-desc">Ми не шлем спам, і не передаємо нікому ваші дані</p>
-        </form>
-      </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer-section">
+    <footer class="footer-section">
       <div class="container">
         <ul class="footer-list grid-list">
           <li class="footer-item grid-item">
@@ -488,7 +525,7 @@
         </ul>
         <p class="footer-copyright">&copy; 2023. Всі права захищені</p>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">

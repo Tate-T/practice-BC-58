@@ -95,4 +95,44 @@
   .services-item {
     --grid-items: 2;
   }
+
+  /* STANDARTS */
+
+  .standarts {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  .standarts-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+
+  .standarts-list {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--border-color);
+    padding-top: 70px;
+  }
+
+  .standarts-text {
+    margin-bottom: 0;
+  }
+
+  .standarts-box picture {
+    flex-shrink: 0;
+  }
+
+  .works-box {
+    display: flex;
+  }
+
+  .video-box {
+    padding: 165px 0;
+  }
+  .video-input-wrap {
+    width: 489px;
+  }
 }
