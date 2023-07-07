@@ -82,14 +82,11 @@
   backdrop-filter: blur(3px);
 }
 
-
 .header-list {
   display: flex;
   gap: 40px;
   justify-content: flex-end;
 }
-
-
 
 .header-link {
   color: var(--background-text-color);
@@ -172,23 +169,35 @@
   gap: 30px;
 }
 
-
 /* Hero */
 .hero {
   padding-top: 119px;
   padding-bottom: 135px;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
-    url(../images/hero-back.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1920px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.2);
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../images/hero@1x-mob.webp);
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/hero@2x-mob.webp);
+  }
 }
 
 .hero-subtitle {
@@ -231,7 +240,7 @@
 }
 
 .servises-list {
-  --grid-gap:27px;
+  --grid-gap: 27px;
 }
 
 .services-item {
@@ -279,6 +288,4 @@
   .container {
     max-width: 428px;
   }
-
- 
 }
